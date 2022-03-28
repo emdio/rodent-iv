@@ -13,7 +13,7 @@ C1FLAGS = -g -w -Wfatal-errors -pipe -DWRITEDEBUGFILE -DBOOKPATH=$(DATADIR)
 
 # define the link options
 LDFLAGS = -s -lm -pthread
-LD1FLAGS = -lm
+#LD1FLAGS = -lm
 
 # define output name and settings file
 EXENAME= ../mac/rodentiv
