@@ -12,7 +12,7 @@ CFLAGS = -g -w -Wfatal-errors -pipe -DNDEBUG -O3 -fno-rtti -finline-functions -f
 C1FLAGS = -g -w -Wfatal-errors -pipe -DWRITEDEBUGFILE -DBOOKPATH=$(DATADIR)
 
 # define the link options
-LDFLAGS = -s -lm
+LDFLAGS = -s -lm -pthread
 LD1FLAGS = -lm
 
 # define output name and settings file
