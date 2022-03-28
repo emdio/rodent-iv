@@ -16,7 +16,7 @@ LDFLAGS = -s -lm
 LD1FLAGS = -lm
 
 # define output name and settings file
-EXENAME= ../mac/rodentIV
+EXENAME= ../mac/rodentiv
 
 default: build
 
