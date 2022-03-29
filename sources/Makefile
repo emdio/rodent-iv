@@ -16,7 +16,7 @@ LDFLAGS = -s -lm -pthread
 #LD1FLAGS = -lm
 
 # define output name and settings file
-EXENAME= ../mac/rodentiv
+EXENAME= rodentiv
 
 default: build
 
