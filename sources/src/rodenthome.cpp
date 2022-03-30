@@ -213,9 +213,9 @@ void SetRodentHomeDir() {
     LogFileWStr = RodentHomeDirWStr + L"rodent.log";
 #endif
     printf_debug("LogFile='%s'\n", WStr2Str(LogFileWStr).c_str());
-	// Si aqui pongo L"/home/emilio/soft/git/rodent-iv/personalities/basic.ini" entonces al lanzar rodentiv sí encuentra basic.ini
-    if (!DirOrFileExists(WStr2Str(RodentHomeDirWStr + L"personalities/basic.ini").c_str()))
+	if (!DirOrFileExists(WStr2Str(RodentHomeDirWStr + L"personalities/basic.ini").c_str()))
         printfUciOut("info string no 'basic.ini' - check installation, please\n");
+        printf("basic.ini not found at: %s\n", (WStr2Str(RodentHomeDirWStr + L"personalities/basic.ini").c_str()));
 #ifdef DEBUG
     else
         printfUciOut("info string use '%s'\n", WStr2Str(RodentHomeDirWStr).c_str());
